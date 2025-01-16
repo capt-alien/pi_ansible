@@ -1,0 +1,11 @@
+Usefull commands:
+
+to get ansible to ping hosts:
+$ ansible -i inventory pis -m ping -v
+
+Execute Playbook:
+ansible-playbook -i pies, command.yaml -vv
+
+
+playbook notes:
+command.yaml  ---> runs a command on the inventory

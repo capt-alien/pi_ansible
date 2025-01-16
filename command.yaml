@@ -1,0 +1,7 @@
+---
+- name: Executes a command on a node
+  hosts: pis
+  connection: local
+  tasks:
+    - name: Execute a command
+      command: cat /etc/hosts
