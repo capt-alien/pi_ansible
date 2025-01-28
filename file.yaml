@@ -1,0 +1,9 @@
+---
+- hosts: pis
+  become: true
+  connection: local
+  tasks:
+      - name: create a file
+        copy:
+          dest: /opt/file.txt
+          content: "this file was made with magic, and ansible!"
